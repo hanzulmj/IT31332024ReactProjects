@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>Student Information Portal</h1>
       <hr/>
-      <table width="10%"> == 50
+      <table width="100%">
         <tbody>
           <tr>
             <td>
