@@ -1,4 +1,5 @@
 import '../assests/css/compo.css';
+import { students } from '../data/StudentsDb';
 export default function StudentTable(props){
     return (
         <div className="outerDiv">
@@ -12,6 +13,19 @@ export default function StudentTable(props){
                         <td>Country</td>
                     </tr>
                 </thead>
+                <tbody>
+                    {
+                        props.students.map( student=>
+                            <tr>
+                                <td>{student.firstname}</td>
+                                <td>{student.lastName}</td>
+                                <td>{student.course}</td>
+                                 <td>{student.address.country}</td>
+
+                            </tr>
+                        )
+                    }
+                </tbody>
             </table>
             </div>
             
