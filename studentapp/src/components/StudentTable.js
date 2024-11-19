@@ -4,5 +4,5 @@ export default function StudentTable(props){
         <div>
             
         </div>
-    )
+    );
 }
